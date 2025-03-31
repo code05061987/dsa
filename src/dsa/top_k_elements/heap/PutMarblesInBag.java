@@ -39,6 +39,20 @@ Constraints:
 1 <= k <= weights.length <= 105
 1 <= weights[i] <= 109
  */
+
+/*
+    Explanation :
+    - Initialize n as the size of the weights array.
+    - Create a array pairWeights of size n - 1 to store sums of adjacent pairs.
+    - Iterate over weights:
+         - For each pair of adjacent elements, store their sum in pairWeights.
+    - Sort the pairWeights array in ascending order.
+    - Initialize answer as 0 to store the difference between max and min sums.
+    - Iterate over the first and last k - 1 elements of pairWeights:
+         - Add the difference between the largest k - 1 sums and smallest k - 1 sums to answer.
+    - Return answer as the result.
+
+ */
 public class PutMarblesInBag {
 
     public long putMarbles(int[] weights, int k) {
@@ -61,7 +75,9 @@ public class PutMarblesInBag {
         return answer;
     }
 
-
+    /*
+    Solution using Max and Min heap. Not very optimum for large K values on Max Heap
+     */
     public long putMarblesWitHeap(int[] weights, int k) {
         if (k == weights.length) return 0;
 
@@ -85,6 +101,10 @@ public class PutMarblesInBag {
         return result;
     }
 
+    /*
+        Solution partial sort for max k-1 and min k-1 elements
+        Again not very optimum
+     */
     public long putMarblesPartialSort(int[] weights, int k) {
         if (k == weights.length) return 0;
 

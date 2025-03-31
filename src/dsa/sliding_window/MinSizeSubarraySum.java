@@ -35,6 +35,39 @@ package dsa.sliding_window;
  */
 public class MinSizeSubarraySum {
 
+
+    /*
+    Explanation :
+
+    * [2,3,1,2,4,3]
+    * ||
+    * [2,3,1,2,4,3]
+    *  | |
+    * [2,3,1,2,4,3]
+    *  |   |
+    * [2,3,1,2,4,3]
+    *  |     |
+    * found subarray with 4 size
+    *
+    * [2,3,1,2,4,3]
+    *    |     |
+    * found subarray with 4 size
+    * [2,3,1,2,4,3]
+    *      |   |
+    * found subarray with 3 size
+    *
+    * [2,3,1,2,4,3]
+    *        |   |
+    * found subarray with 3 size
+    *
+    * [2,3,1,2,4,3]
+    *          | |
+    * found subarray with 2 size
+    * [2,3,1,2,4,3]
+    *            ||
+    * [2,3,1,2,4,3]
+    *            | |
+    * */
     public int minSubArrayLen(int target, int[] nums) {
         int endIdx = 0;
         int startIdx = 0;
