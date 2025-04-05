@@ -10,6 +10,7 @@
             <class name="test.SumRootLeafTest"/>
             <class name="test.TripletTest"/>
             <class name="test.RotateArrayTest"/>
+            <class name="test.InsertIntervalTest"/>
         </classes>
     </test>
 </suite>
