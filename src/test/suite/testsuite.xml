@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="All Dsa">
+        <classes>
+            <class name="test.MinSizeSubarraySumTest"/>
+            <class name="test.PutMarblesInBagTest"/>
+            <class name="test.RemoveDuplicatesTest"/>
+            <class name="test.BrainpowerTest"/>
+            <class name="test.SumRootLeafTest"/>
+            <class name="test.TripletTest"/>
+            <class name="test.RotateArrayTest"/>
+        </classes>
+    </test>
+</suite>

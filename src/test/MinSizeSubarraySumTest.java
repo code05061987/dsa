@@ -4,7 +4,7 @@ import dsa.sliding_window.MinSizeSubarraySum;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DSATest {
+public class MinSizeSubarraySumTest {
 
     @Test
     public void test() {
