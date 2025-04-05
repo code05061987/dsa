@@ -6,6 +6,10 @@
             <class name="test.MinSizeSubarraySumTest"/>
             <class name="test.PutMarblesInBagTest"/>
             <class name="test.RemoveDuplicatesTest"/>
+            <class name="test.BrainpowerTest"/>
+            <class name="test.SumRootLeafTest"/>
+            <class name="test.TripletTest"/>
+            <class name="test.RotateArrayTest"/>
         </classes>
     </test>
 </suite>
